@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "watch": "webpack serve"
+    "build": "webpack --mode production",
+    "watch": "webpack serve --mode development"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +18,12 @@
     "sass": "^1.39.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
+    "vue-loader": "^16.5.0",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.2.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.11"
   }
 }
