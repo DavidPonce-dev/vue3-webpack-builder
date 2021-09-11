@@ -1,10 +1,15 @@
 const path = require("path");
+const { DefinePlugin } = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "/src/index.js",
   plugins: [
+    new DefinePlugin({
+      __VUE_OPTIONS_API__: false,
+      __VUE_PROD_DEVTOOLS__: false,
+    }),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       title: "Vue 3 webpack",
