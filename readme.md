@@ -8,8 +8,13 @@ tambien sirve como base para iniciar un proyecto minimalista de vue en su versio
 
 para correr la aplicacion en tiempo real
 
+```
 $ npm run watch
 
+```
 para hacer deploy a la aplicacion 
 
+```
 $ npm run build
+
+```
